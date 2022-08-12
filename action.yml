@@ -1,0 +1,11 @@
+name: 'test'
+description: 'description'
+inputs:
+  x:
+    default: 1.0
+    
+runs:
+  using: "composite"
+  steps:
+    - uses: docker://fabriziosandri/rcppdeepstate:${{ inputs.x }}
+    
